@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Animation in form</title>
+          <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+          <div class="container">
+                    <div class="text-center my-5">
+                              <h2 class="text-primary">Animation transform</h2>
+                    </div>
+
+                    <form action="" class="px-5 py-3 text-center m-auto ">
+                              
+                              <label for="email">Email :</label>
+                              <input type="email" id="email" class="form-control w-60 m-auto  my-2" required>
+                              <label for="psw">Password</label>
+                              <input type="password" id="psw" class="form-control w-60 m-auto  my-2" required>
+                              <button type="submit" id="submit" class="btn btn-primary" onclick="myFunction()">Click here!</button>
+                             
+                    </form>
+          </div>
+          <script>
+                    function myFunction(){
+                              const email = document.getElementById("email").value;
+                              const password = document.getElementById("psw").value;
+                              const at_position = email.indexOf("@");
+                              const dot_position = email.lastIndexOf(".");
+                              if (email !=(at_position < 1 || dot_position - at_position < 2)) {
+                                        document.getElementById("email").style.transition.left("100px");   
+
+                              }
+                              else if (message == " ") {
+                                        alert("Enter the password");
+                               } else {
+                                        alert("successfully..!");
+                               }
+
+
+
+                              // const email = document.getElementById("email").value;
+                              // const password = document.getElementById("psw").value;
+                              // let at_position = email.indexOf("@");
+                              // let dot_position = email.lastIndexOf(".");
+                              // if (at_position < 1 || dot_position - at_position < 2) {
+                              //           alert("Enter valid name");
+
+                              // }
+                              // else if (message == "") {
+                              //           alert("Enter the password");
+
+
+                              // }
+                              // else {
+                              //           alert("successfully.......");
+                              //           window.location.reload(true);
+                              // }
+                    }
+
+          </script>
+</body>
+
+</html>

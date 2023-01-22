@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+          <title>Login</title>
+</head>
+<body>
+          <div class="container" style="margin-top:150px; ">
+                    <form action="" class="col-5 mx-auto">
+                              <h1 class="text-center mb-4">Login</h1>
+                              <div class="form-floating">
+                                        <input type="text" id="name" placeholder="Name" class="form-control">
+                                        <label for="name">Name</label>
+                              </div>
+                              <div class="form-floating mt-4">
+                                        <input type="password" id="password" placeholder="Password" class="form-control">
+                                        <label for="password">Password</label>
+                              </div>
+                              <input type="submit" value="Submit" id="submitbtn" class="btn btn-success mt-4 d-flex" style="margin-left: 0px; transition:1s">
+                    </form>
+          </div>
+
+          <script>
+                    let email=document.getElementById('name');
+                    let password=document.getElementById('password');
+                    let submitbtn=document.getElementById('submitbtn');
+                    email.addEventListener('change',onchangeemailpass);
+                    password.addEventListener('change',onchangeemailpass);
+                    submitbtn.addEventListener('mouseenter',hover_mouse);
+                    function onchangeemailpass(){
+                              if(email.value=='admin' && password.value=='admin'){
+                                        submitbtn.classList.add('mx-auto');
+                              }
+                              else{
+                                        submitbtn.classList.remove('mx-auto');
+                              }
+                    }
+                    function hover_mouse(){
+
+                              if(email.value!='admin' || password.value!='admin'){
+                                        if(submitbtn.style.marginLeft=='0px'){
+                                                  submitbtn.style.marginLeft='470px';
+                                        }
+                                        else{
+                                                  submitbtn.style.marginLeft='0px';
+                                        }
+                              }
+                    }
+          </script>
+
+</body>
+</html>
+<!-- lomde kya se kya kiya hai ymind acha lagaya easy j hatu han pn mne avo khyal j nto huh tq n wlcm kya kiya aj tune new mgj ka methi pak jesa  task apyo hato mind blowing ae logic lagdyu su hto ofc ma ??hnji su hto    country wise product select kre aema discount aape like rule define kre to ae porduct seldct kre ae customer je country ma hoi ae to aene discount mlvu pde aene bov moto flow 6e holly shit heni n shu hto aene crm lead ma thi sale quoatation ma lavano 6e  tare thy gyo ?  half jevu tthyu je task mne apyo 6e ae aena thi 4week jevu thyu hatu aene uff heni thi pn thy to gyu n ??? bne ne alag aape woo tare ketlo lagse time ?? jovu pde hve ae code thy p6i aene thodu odoo ? hn aene optimize krvo pdse mere pale nhi ae tera odoo bov maja aave pn really task ma magaj no bhsdo pn thy pn maja aave han saru n task mle ae hard mle toj tne kbr pde ae j ne by the way roto hto avdu gyu n odoo to bhi lomde  ae to 6e j tari pase color 6e?? sena gme ae color samajyu ni rang purva na hn han hse km pout girl mate   ny mane aap je ne mare zindagi ma color krva 6e lomde ae kya chutiya pa hai means ??? timepass akyi gal dv am thy che loru ahan kal dv tyi rang thi atrangi bnay duniya tari hnn kya color lavu 4 rey che water  bdha lai le zindaigi boring 6e bdha ni jarur pdse lomde tu kai bol j ma tmari to thik j chale che mare kali thy gy che mari jm blank  hn chal wp ma baat chal tu ek vaar joi le aa pro hann jov jate ek var kru      okie wp ma malya han  -->

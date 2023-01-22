@@ -1,0 +1,34 @@
+body{
+    background-image: linear-gradient(to right top, #c5dcee, #c5c9e6, #cfb3d2, #d69fb0, #cf9086);
+}
+.nav-logo{
+    min-width: 100px;
+    max-width: 170px;
+}
+
+.client{
+    border-radius: 100px;
+}
+.footer{
+    margin-bottom: 0px;
+    height: 200px;
+    background-color: rgb(241, 248, 217);
+}
+.nav-link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: solid;
+    text-decoration: none;
+    color: rgb(54, 53, 53);
+}
+.site{
+    background-color: whitesmoke;
+    
+}
+.womens{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px whitesmoke;
+    font-weight: bold;
+    border-radius: 4px;
+}

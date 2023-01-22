@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<style>
+          #logo {
+                    left: 14px;
+                    top: auto;
+                    color: beige;
+                    position: absolute;
+                    font-size: 32px;
+                    font-weight: bold;
+                    
+          }
+
+          .login-btn {
+                    position: absolute;
+                    right: 18px;
+          }
+          form{
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    background: #5b59594f;
+                    width: 75%;
+          }
+          #nav{
+            height: 50px;
+            align-items: center;
+          }
+</style>
+
+<body style="background: antiquewhite;">
+          <nav class="navbar navbar-expand justify-content-center bg-dark text-bg-dark">
+             
+            <ul class="navbar-nav" id="nav">
+                              <h1 class="navbar-brand" id="logo">logo</h1>
+                              <li class="nav-item mx-5">Home</li>
+                              <li class="nav-item mx-5">Product</li>
+                              <li class="nav-item mx-5">about us</li>
+                              <li class="nav-item mx-5">contact us</li>
+                              <li class="login-btn">Login</li>
+                    </ul>
+          </nav>
+          <div class="container">
+              
+                        <div class="text-center my-5">
+                                       <h2 class="text-primary">My login form</h2> 
+                        </div>
+                              <form action="" class="px-5 py-3 text-center m-auto ">
+                                        <label for="fname">Fname :</label>
+                                        <input type="text" id="fname" class="form-control w-60 m-auto  my-2" required> 
+                                        <label for="email">Email :</label>
+                                        <input type="email" id="email" class="form-control w-60 m-auto  my-2" required> 
+                                        <label for="psw">Password</label>
+                                        <input type="password" id="psw" class="form-control w-60 m-auto  my-2" required>
+                                        <label for="phn">Phone no:</label>
+                                        <input type="text" id="phn" class="form-control w-60 m-auto  my-2" required> 
+                                        <button type="submit" id="submit" class="btn btn-primary" onclick="func()">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </form>
+                   
+          </div>
+          
+<script>
+                    
+function func() {
+  let name = document.getElementById("fname").value;
+  let email = document.getElementById("email").value;
+  let phone_number = document.getElementById("phn").value;
+  let message = document.getElementById("psw").value;
+  let alpha = /^[A-Za-z\s]*$/;
+  let at_position = email.indexOf("@");
+  let dot_position = email.lastIndexOf(".");
+  let phone_regx = /^\d{10}$/;
+  if (name == "" || !name.match(alpha)) {
+    alert("Enter valid name");
+  } else if (at_position < 1 || dot_position - at_position < 2) {
+    alert("Enter valid Email-ID");
+  } else if (!phone_number.match(phone_regx)) {
+    alert("Enter valid Phone number");
+  } else if (message == " ") {
+    alert("Enter the password");
+  } else {
+    alert("successfully.......");
+    window.location.reload(true);
+  }
+}
+ </script>
+</body>
+</html>
